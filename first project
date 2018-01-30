@@ -1,0 +1,34 @@
+namespace first_project
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            System.Console.Write("hello my name is S.A.M. That stands for System Assistant Machine :) (insert greeting) ");
+            string greeting = System.Console.ReadLine();
+            System.Console.Write("what's your name first name? ");
+            String userFname = System.Console.ReadLine();
+            System.Console.Write("middle initial? ");
+            String userMname = System.Console.ReadLine();
+            System.Console.Write("And last but not least but certainly last, your last name? ");
+            String userLname = System.Console.ReadLine();
+            System.Console.Write("your name is " + userFname + " " + userMname + " " + userLname + ".");
+            System.Console.Write("what a beautiful name. do you know what it means?...Because I don't. :/ ");
+            System.Console.Write("How many years have you been alive ? (insert age) ");
+            int userAge = int.Parse(System.Console.ReadLine());
+            System.Console.Write("wow you're old. You must run on windows B.C XD. you are a citizen of the United States of america? (true or false) ");
+            bool isCitizen = bool.Parse(System.Console.ReadLine());
+            System.Console.Write("you are registered to vote? (true or false) ");
+            bool canVote = bool.Parse(System.Console.ReadLine());
+            System.Console.Write("how many feet is your body? ");
+            int userfeet = int.Parse(System.Console.ReadLine());
+            System.Console.Write("how many inches tall are you? ");
+            double userinches = Double.Parse(System.Console.ReadLine());
+            System.Console.Write("so your height is " + userfeet + "'" + userinches + ".");
+            System.Console.Write("wow i would tell you how tall i am.......but i don't even know it :? ");
+            System.Console.Write("thank you for participating!!! :D ");
+            System.Console.ReadKey();
+
+        }
+    }
+}
