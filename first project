@@ -4,11 +4,11 @@ namespace first_project
     {
         static void Main(string[] args)
         {
-            System.Console.Write("S.A.M: My name is S.A.M. It stands for System assistant Machine :) (Insert Greeting) ");
+            System.Console.Write("My name is S.A.M. It stands for System Assistant Machine :) (Insert Greeting) ");
             string greeting = System.Console.ReadLine();
-            System.Console.Write("S.A.M: " + greeting + "?" + " " + "What does that mean?" + " " + "Anyway, I'd like to ask you a few questions.");
+            System.Console.Write(greeting + "?" + " " + "What does that mean?" + " " + "Anyway, I'd like to ask you a few questions.");
             System.Console.ReadLine();
-            System.Console.Write("S.A.M: What is your first name? ");
+            System.Console.Write(" What is your first name? ");
             string userFname = System.Console.ReadLine();
             System.Console.Write("Middle initial? ");
             string userMname = System.Console.ReadLine();
@@ -16,14 +16,19 @@ namespace first_project
             string userLname = System.Console.ReadLine();
             System.Console.Write("Your name is " + userFname + " " + userMname + "." + " " + userLname + "." + " ");
             System.Console.Write("What a beautiful name, do you know what it means? I don't because Justice Thomas made me. :/ ");
+            System.Console.ReadLine();
+            System.Console.Write("Let's figure out if you are eligible to vote in america ok? ");
+            string consent = System.Console.ReadLine();
             System.Console.Write("How many years have you been alive ? (insert age) ");
             int userAge = int.Parse(System.Console.ReadLine());
             System.Console.Write("Wow, you're old. You must run on Windows B.C XD. You're a citizen of The United States of America (True or False) ");
             bool isCitizen = bool.Parse(System.Console.ReadLine());
             bool canvote;
             canvote = (userAge >= 18) && isCitizen;
-            System.Console.Write("can vote: " + canvote);
-            System.Console.ReadLine(); 
+            System.Console.Write("eligible to vote: " + canvote);
+            System.Console.ReadLine();
+            System.Console.Write("Now let's figure out how tall you are in centimeters!");
+            System.Console.ReadLine();
             System.Console.Write("How many feet is your body? ");
             int userfeet = int.Parse(System.Console.ReadLine());
             System.Console.Write("How many inches tall are you? ");
@@ -32,6 +37,7 @@ namespace first_project
             totalCMheight += ((userfeet * 12) + userinches) * 2.54;
             System.Console.Write("So your height is " + " " + totalCMheight + " " + "cm tall" + " ");
             System.Console.Write("Wow, I would tell you how tall I am, but I am not a physical entity.");
+            System.Console.ReadLine();
             System.Console.Write("Thank you for participating!!! :D ");
             System.Console.ReadKey();
 
