@@ -1,0 +1,21 @@
+namespace section2
+{
+    class person
+    {
+        public string Firstname;
+        public string lastname;
+        public int Age;
+        public person Spouse; 
+
+        public string getfullname()
+        {
+            return this.Firstname + " " + this.lastname; 
+        }
+        public static double sumofallages;
+
+        public void Printnameandage()
+        {
+            System.Console.Write(Firstname + " " + lastname + " " + Age + ".");
+        }
+    }
+}
