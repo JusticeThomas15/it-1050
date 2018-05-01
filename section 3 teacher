@@ -1,0 +1,23 @@
+
+namespace section_3
+{
+    public class Teacher
+    {
+        private string name;
+        private string classname;
+
+        public Teacher(string name, string classname)
+        {
+            this.name = name;
+            this.classname = classname;
+        }
+        public void setstudentsgrades(student student, int grade)
+        {
+            student.setgrade(grade);
+        }
+        public void InstructorInfo()
+        {
+            System.Console.WriteLine(name + ", instructor of " + classname);
+        }
+    }
+}
