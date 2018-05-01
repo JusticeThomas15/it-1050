@@ -1,0 +1,31 @@
+
+namespace section_3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Teacher John = new Teacher("John", "english");
+            Teacher Mike = new Teacher("Mike", "Math");
+
+            student Jane = new student("Jane", John);
+            student Joe = new student("Joe", John);
+            student Melissa = new student("Melissa", Mike);
+            student Matt = new student("Matt", Mike);
+
+            John.setstudentsgrades(Jane, 95);
+            John.setstudentsgrades(Joe, 85);
+            Mike.setstudentsgrades(Melissa, 90);
+            Mike.setstudentsgrades(Matt, 92);
+
+            Jane.print();
+            John.InstructorInfo();
+            Joe.print();
+            John.InstructorInfo();
+            Matt.print();
+            Mike.InstructorInfo();
+            Melissa.print();
+            Mike.InstructorInfo();
+        }
+    }
+}
