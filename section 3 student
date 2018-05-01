@@ -1,0 +1,28 @@
+
+namespace section_3
+{
+  public class student
+    {
+        private string name;
+        private string classname;
+        private int grade;
+        private Teacher teacher;
+
+        public student(string name, Teacher teacher) 
+        {
+            this.name = name;
+            this.teacher = teacher; 
+            this.grade = 0; 
+
+        }
+
+        public void setgrade(int grade)
+        {
+            this.grade = grade; 
+        }
+        public void print()
+        {
+            System.Console.WriteLine(name + " Grade: " + grade + "taught by: ");
+        }
+    }
+}
