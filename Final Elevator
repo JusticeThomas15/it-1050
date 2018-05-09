@@ -32,6 +32,3 @@ namespace Final
                 return false;
             }
         }
-
-    }
-}
