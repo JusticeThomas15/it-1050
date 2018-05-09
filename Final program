@@ -1,10 +1,4 @@
 namespace Final
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            namespace FinalExam
     {
         class Program
         {
@@ -25,4 +19,3 @@ namespace Final
             }
         }
     }
-}
